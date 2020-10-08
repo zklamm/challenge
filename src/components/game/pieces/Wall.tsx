@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react';
-import { makeStyles, Theme } from '@material-ui/core/styles';
+import React from "react";
+import { makeStyles, Theme } from "@material-ui/core/styles";
 
 interface PieceProps {
   piece: GameBoardPiece;
@@ -15,12 +15,9 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 const Piece: React.FC<PieceProps> = ({ piece }): JSX.Element => {
-  
   const styles = useStyles({});
-  
-  return (
-    <div className={styles.base} />
-  );
+
+  return <div className={styles.base} />;
 };
 
 export default Piece;
